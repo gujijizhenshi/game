@@ -12,7 +12,7 @@ body {
    標題樣式
 ---------------------------*/
 h1 {
-  color: #ff6600;      /* 標題文字顏色為橘色 */
+  color: ##8f1402;      /* 標題文字顏色為紅色 */
   margin-bottom: 20px; /* 標題下方留 20px 的空白距離 */
 }
 
@@ -38,7 +38,7 @@ img {
    按鈕樣式
 ---------------------------*/
 button {
-  background-color: #ff6600; /* 按鈕背景顏色橘色 */
+  background-color: ##8f1402; /* 按鈕背景顏色紅色 */
   color: white;              /* 按鈕文字顏色白色 */
   border: none;              /* 取消按鈕邊框 */
   padding: 12px 24px;        /* 上下內距 12px，左右內距 24px */
@@ -67,7 +67,7 @@ button:hover {
 
 /* 導航列樣式 */
 nav {
-  background-color: #ff6600;  /* 橘色背景 */
+  background-color: ##8f1402;  /* 紅色背景 */
   padding: 10px;
   text-align: center;
   border-radius: 8px;
@@ -214,6 +214,7 @@ section {
 #features li {
   margin: 10px 0;
 }
+
 
 
 
