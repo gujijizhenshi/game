@@ -3,9 +3,25 @@
 ---------------------------*/
 body {
   font-family: 'Roboto', sans-serif; /* 設定整個頁面的字型為 Roboto，如果沒有 Roboto 就用系統預設 sans-serif */
-  background-color: #ffffff;         /* 設定頁面背景顏色為淡灰色 */
+  background-color: #ffffff;         /* 設定頁面背景顏色為白色 */
   text-align: center;                 /* 所有文字與元素置中對齊 */
-  padding: 50px;                      /* 頁面四周留出 50px 的內距，讓內容不要貼邊 */
+  padding: 50px;  /* 頁面四周留出 50px 的內距，讓內容不要貼邊 */
+   
+   /* 整個網頁背景圖片 */
+  background-image: url('images/bg.jpg'); /* 設定背景圖片 */
+  background-size: cover;                  /* 讓圖片覆蓋整個頁面，不留空白 */
+  background-position: center;             /* 置中對齊 */
+  background-repeat: no-repeat;            /* 不重複圖片 */
+  font-family: 'Roboto', sans-serif;       /* 其他原本的設定也可以加上 */
+
+}
+/*主要背景改白色*/
+
+section {
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 /* --------------------------
@@ -54,15 +70,9 @@ button {
    按鈕滑鼠懸停效果
 ---------------------------*/
 button:hover {
-  background-color: #ff3300; /* 滑鼠移到按鈕上時，背景顏色變深橘色 */
+  background-color: #oooooo; /* 滑鼠移到按鈕上時，背景顏色變黑色 */
 
-   /* 整個網頁背景圖片 */
-  background-image: url('images/bg.jpg'); /* 設定背景圖片 */
-  background-size: cover;                  /* 讓圖片覆蓋整個頁面，不留空白 */
-  background-position: center;             /* 置中對齊 */
-  background-repeat: no-repeat;            /* 不重複圖片 */
-  font-family: 'Roboto', sans-serif;       /* 其他原本的設定也可以加上 */
-
+  
 }
 
 /* 導航列樣式 */
@@ -83,12 +93,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffcc99;             /* 滑鼠移上去變淺橘色 */
+  color: #oooooo;             /* 滑鼠移上去變淺橘色 */
 }
 
 a.btn {
   display: inline-block;           /* 讓 <a> 表現得像按鈕區塊 */
-  background-color: #ff6600;       /* 橘色背景 */
+  background-color: #8f1402;       /* 紅色背景 */
   color: white;                    /* 白色文字 */
   text-decoration: none;           /* 移除底線 */
   padding: 12px 24px;              /* 上下左右的內距 */
@@ -98,16 +108,9 @@ a.btn {
   transition: background-color 0.3s; /* 增加滑鼠移入時的動畫 */
 }
 
-/* hover 效果：滑鼠移到按鈕上會變深橘 */
+/* hover 效果：滑鼠移到按鈕上會變黑 */
 a.btn:hover {
-  background-color: #ff3300;
-}
-
-body {
-  font-family: "Noto Sans TC", sans-serif;
-  background-color: #fdf6ec;
-  text-align: center;
-  padding: 20px;
+  background-color: #oooooo;
 }
 
 button {
@@ -215,13 +218,7 @@ section {
   margin: 10px 0;
 }
 
-/*主要背景改白色*/
-section {
-  background-color: #ffffff;
-}
-#hero {
-  background-color: rgba(255,255,255,0.9);
-}
+
 
 
 
