@@ -191,6 +191,31 @@ button:hover {
   }
 }
 
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#hero h1 {
+  font-size: 2rem;
+}
+
+#features ul {
+  list-style: none;
+  padding: 0;
+}
+
+#features li {
+  margin: 10px 0;
+}
+
+
 
 
 
