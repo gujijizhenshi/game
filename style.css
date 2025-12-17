@@ -70,7 +70,7 @@ button {
    按鈕滑鼠懸停效果
 ---------------------------*/
 button:hover {
-  background-color: #oooooo; /* 滑鼠移到按鈕上時，背景顏色變黑色 */
+  background-color: #000000; /* 滑鼠移到按鈕上時，背景顏色變黑色 */
 
   
 }
@@ -110,7 +110,7 @@ a.btn {
 
 /* hover 效果：滑鼠移到按鈕上會變黑 */
 a.btn:hover {
-  background-color: #oooooo;
+  background-color: #000000;
 }
 
 button {
@@ -217,6 +217,7 @@ section {
 #features li {
   margin: 10px 0;
 }
+
 
 
 
