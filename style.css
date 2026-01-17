@@ -1,233 +1,91 @@
-/* --------------------------
-   整個網頁的主要樣式
----------------------------*/
+/* 全站基礎設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: 'Roboto', sans-serif; /* 設定整個頁面的字型為 Roboto，如果沒有 Roboto 就用系統預設 sans-serif */
-  background-color: #f8f3ef;         /* 設定頁面背景顏色為米白色 */
-  text-align: center;                 /* 所有文字與元素置中對齊 */
-  padding: 50px;  /* 頁面四周留出 50px 的內距，讓內容不要貼邊 */
-   
-   /* 整個網頁背景圖片 */
-  background-image: url('images/bg.jpg'); /* 設定背景圖片 */
-  background-size: cover;                  /* 讓圖片覆蓋整個頁面，不留空白 */
-  background-position: center;             /* 置中對齊 */
-  background-repeat: no-repeat;            /* 不重複圖片 */
-  font-family: 'Roboto', sans-serif;       /* 其他原本的設定也可以加上 */
-
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+  color: #2b2b2b;
+  background-color: #f7f5f2;
 }
-/*主要背景改米白色*/
 
+/* 通用 section */
 section {
-  background-color:#f8f3ef;
-  border-radius: 16px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px;
 }
 
-/* --------------------------
-   標題樣式
----------------------------*/
-h1 {
-  color: #8f1402;      /* 標題文字顏色為紅色 */
-  margin-bottom: 20px; /* 標題下方留 20px 的空白距離 */
-}
-
-/* --------------------------
-   段落文字樣式
----------------------------*/
-p {
-  font-size: 18px;     /* 文字大小為 18px */
-  color: #333;         /* 文字顏色為深灰色 (#333) */
-  margin-bottom: 30px; /* 段落下方留 30px 空白距離 */
-}
-
-/* --------------------------
-   圖片樣式
----------------------------*/
-img {
-  border-radius: 12px;                            /* 圓角 12px，使圖片邊角變圓 */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);         /* 加上陰影效果，x偏移 0px, y偏移 4px, 模糊 8px, 顏色半透明黑色 */
-  margin-bottom: 30px;                             /* 圖片下方留 30px 空白 */
-}
-
-/* --------------------------
-   按鈕樣式
----------------------------*/
-button {
-  background-color: #8f1402; /* 按鈕背景顏色紅色 */
-  color: white;              /* 按鈕文字顏色白色 */
-  border: none;              /* 取消按鈕邊框 */
-  padding: 12px 24px;        /* 上下內距 12px，左右內距 24px */
-  cursor: pointer;           /* 滑鼠移到按鈕時顯示手指圖示 */
-  border-radius: 8px;        /* 按鈕圓角 8px */
-  font-size: 16px;           /* 按鈕文字大小 16px */
-   touch-action: manipulation;
--webkit-tap-highlight-color: transparent;
-
-}
-
-/* --------------------------
-   按鈕滑鼠懸停效果
----------------------------*/
-button:hover {
-  background-color: #000000; /* 滑鼠移到按鈕上時，背景顏色變黑色 */
-
-  
-}
-
-/* 導航列樣式 */
-nav {
-  background-color: #8f1402;  /* 紅色背景 */
-  padding: 10px;
-  text-align: center;
-  border-radius: 8px;
-  margin-bottom: 30px;
-}
-
-nav a {
-  color: white;               /* 白色文字 */
-  text-decoration: none;      /* 去掉底線 */
-  margin: 0 15px;             /* 左右間距 */
-  font-weight: bold;
-  font-size: 16px;
-}
-
-nav a:hover {
-  color: #oooooo;             /* 滑鼠移上去變淺橘色 */
-}
-
-a.btn {
-  display: inline-block;           /* 讓 <a> 表現得像按鈕區塊 */
-  background-color: #8f1402;       /* 紅色背景 */
-  color: white;                    /* 白色文字 */
-  text-decoration: none;           /* 移除底線 */
-  padding: 12px 24px;              /* 上下左右的內距 */
-  margin: 10px;                    /* 每個按鈕之間的間距 */
-  border-radius: 8px;              /* 圓角 */
-  font-size: 16px;                 /* 字體大小 */
-  transition: background-color 0.3s; /* 增加滑鼠移入時的動畫 */
-}
-
-/* hover 效果：滑鼠移到按鈕上會變黑 */
-a.btn:hover {
-  background-color: #000000;
-}
-
-button {
-  background-color: #c49a6c;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #a87f52;
-}
-
-.page {
-  margin-top: 20px;
-  padding: 10px;
-}
-
-#quiz input {
-  padding: 8px;
-  width: 60%;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-/* === 📲 響應式設定（行動裝置與平板） === */
-
-/* 平板與中型螢幕（最大寬度 768px） */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  button {
-    width: 80%;
-    font-size: 1rem;
-    padding: 10px 16px;
-  }
-
-  #story, #quiz, #law, #history, #maintenance, #ending {
-    width: 90%;
-    margin: 0 auto;
-    padding: 15px;
-  }
-
-  #story-text, #question {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-}
-
-/* 手機小螢幕（最大寬度 480px） */
-@media (max-width: 480px) {
-  h1, h2 {
-    font-size: 1.2rem;
-  }
-
-  button {
-    width: 90%;
-    font-size: 0.95rem;
-    padding: 12px;
-    border-radius: 10px;
-  }
-
-  input[type="text"] {
-    width: 90%;
-    font-size: 1rem;
-    padding: 10px;
-  }
-
-  #story-text, #question {
-    font-size: 0.9rem;
-  }
-
-  #game-container {
-    padding: 10px;
-  }
-}
-
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
+/* Hero 區塊 */
 #hero {
-  text-align: center;
-  padding: 60px 20px;
+  min-height: 100vh;
+  background-color: #7a3e2e; /* 紅磚色 */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#hero h1 {
+#hero .title {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+#hero .subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+#hero .intro {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  max-width: 600px;
+}
+
+#hero .story-text {
+  font-size: 1rem;
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+/* 按鈕 */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #7a3e2e;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* 其他區塊 */
+section h2 {
   font-size: 2rem;
+  margin-bottom: 24px;
 }
 
 #features ul {
   list-style: none;
-  padding: 0;
 }
 
 #features li {
-  margin: 10px 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
